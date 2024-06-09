@@ -1,0 +1,13 @@
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: lightblue;
+    border: 1px solid black;
+    transition: width 1s ease-in-out, background-color 0.5s ease-in, transform 0.7s ease-out; /* Combined transitions */
+    cursor: pointer; /* Optional hover effect */
+}
+
+.box:hover {
+    background-color: lightcoral; /* Optional hover effect */
+}

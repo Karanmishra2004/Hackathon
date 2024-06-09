@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties Demonstration</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Item 1 (grid-column: span 2)</div>
+        <div class="grid-item item2">Item 2 (grid-row-start: 2)</div>
+        <div class="grid-item item3">Item 3 (place-items: center)</div>
+        <div class="grid-item item4">Item 4 (grid-template-rows: repeat(2, 1fr))</div>
+        <div class="grid-item item5">Item 5 (grid-gap: 20px)</div>
+    </div>
+
+    <p>Explanation of Grid Properties used in this example:</p>
+    <ul>
+        <li>Item 1: Spans 2 columns using `grid-column: span 2`.</li>
+        <li>Item 2: Starts on the second row using `grid-row-start: 2`.</li>
+        <li>Item 3: Centered within its grid cell using `place-items: center`.</li>
+        <li>Item 4: Occupies full width and half the height (2 rows) using `grid-template-rows: repeat(2, 1fr)`. </li>
+        <li>Item 5: Demonstrates spacing with `grid-gap: 20px` between items.</li>
+    </ul>
+</body>
+</html>

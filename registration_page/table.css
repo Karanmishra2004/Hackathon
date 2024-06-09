@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust width as needed */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    justify-content: center;
+    text-align: center; /* Align content left by default */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 10px; /* Spacing between items */
+    background-color: lightgray; /* Optional background for better visualization */
+    padding: 10px; /* Optional padding */
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center; /* Center text within items */
+}
+
+.item1 {
+    grid-column: span 2; /* Spans 2 columns */
+}
+
+.item2 {
+    grid-row-start: 2; /* Starts on the second row */
+}
+
+.item3 {
+    place-items: center; /* Centered within its cell */
+}
+
+.item4 {
+    grid-template-rows: repeat(2, 1fr); /* Two rows with equal height */
+}
+
+.item5 {
+    grid-gap: 20px; /* Demonstrates spacing (overrides container gap for this item) */
+}

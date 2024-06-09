@@ -1,0 +1,43 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 10px; /* Spacing between gallery items */
+  }
+  
+  .gallery-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    overflow: hidden; /* Clip overflowing content */
+    position: relative; /* Enable positioning for info overlay */
+  }
+  
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Fills the entire item */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white; /* Text color for info */
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .gallery-item:hover .info {
+    opacity: 1; /* Reveal info on hover */
+  }
+  
+  .info h3,
+  .info p {
+    margin: 0;
+  }
+  

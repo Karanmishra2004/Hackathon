@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Button</title>
+</head>
+<body>
+  <button id="myButton" style="background-color: lightblue; padding: 10px; border: none; cursor: pointer;" onclick="changeColor()">Click Me!</button>
+
+  <script>
+    function changeColor() {
+      // Get the button element
+      const button = document.getElementById('myButton');
+
+      // Change the button's background color on click
+      button.style.backgroundColor = "lightgreen";
+    }
+  </script>
+</body>
+</html>
